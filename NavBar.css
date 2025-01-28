@@ -1,0 +1,206 @@
+body {
+    font-family: "Bebas Neue", cursive;
+    color: white;
+    height: 4000px;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+html {
+    scroll-behavior: smooth;
+}
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50px;
+    box-shadow: 1px 1px 10px #19b804;
+}
+
+.imageLogo {
+    border-radius: 50px;
+}
+
+.navbar {
+    position: fixed;
+    position: sticky;
+    top: 0;
+    left: 0;
+    
+    border-radius: 50px;
+    box-shadow: 1px 2px 5px #19b804; ;
+    margin: 20px;
+    
+    overflow: hidden;
+}
+
+.nav_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px ;
+    margin: 0px;
+}
+
+.navbar ul {
+    color: white;
+    
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+.navbar li a {
+    
+    position: relative;
+    width: max-content;
+    text-decoration: none;
+    color: white;
+}
+.navbar li a:hover {
+text-shadow: 1px 1px 3px #19b804 ;}
+.navbar li a:hover::after {
+    width: 100%;
+    
+    border-radius: 20px;}
+.navbar li a::after {
+    content: "";
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px #19b804;
+    background: linear-gradient(to right, #75c782, #19b804);
+    height: 4px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+    margin: -2px 0px;
+    
+
+}
+
+.navbar li {
+    cursor: pointer;
+    color: white;
+    padding: 14px 5px;
+    text-align: center;
+}
+
+.HIeveryone{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  margin-top: 30px;
+  font-size: 20px;
+}
+.HIeveryone h1{
+    padding-top: 150px;
+
+}
+.HIeveryone img{
+    width: 300px;
+    height: 500px;
+    
+}
+
+
+
+.Services{
+   justify-content: center;
+   text-align: center;
+    color: white;
+    padding: 10px;
+    margin-top: 30px;
+
+}
+
+h2{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.imgOfServicesALL{
+    display: flex;
+    color: white;
+    padding: 10px;
+    margin-top: 30px;
+}
+.design{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+.space{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    }
+.ServicesP ul {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+}
+
+.ServicesP ul li{
+    justify-content: space-between;
+    margin: 10px ;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #19b804;
+    }
+
+
+
+.SM{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    padding: 10px;
+    margin-top: 30px;
+    font-size:  20px;
+   
+
+}
+
+
+
+@media (max-width: 670px) {
+    .navbar ul {
+        flex-direction: row; /* Keep items in a single line */
+        align-items: center;
+    }
+    .HIeveryone{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        padding: 10px;
+        margin-top: 30px;
+        font-size: 10px;
+      }
+      .HIeveryone h1{
+          padding-top: 50px;
+      
+      }
+      .HIeveryone img{
+          width: 150px;
+          height: 200px;
+          
+      }
+    .navbar li {
+        font-size: 14px; /* Smaller size for mobile */
+    }
+   
+}
